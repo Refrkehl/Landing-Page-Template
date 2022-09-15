@@ -1,0 +1,135 @@
+:root {
+    --basic-dark:#070707;
+    --basic-light:#F6F6F6;
+    --basic-extra-light:#FFFFFF;
+
+    --special: #828282;    
+}
+
+.page {
+    background-color: var(--basic-extra-light);
+    margin: 0 auto;
+}
+
+.page-body {
+    color:var(--basic-dark);
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1445px;
+    min-width: 374px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    position: relative;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+@media screen and (max-width:499px) {
+    .page-body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .page-body {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+/*==================== header start ====================*/
+/*==================== header start ====================*/
+.header {
+    max-width: 944px;
+}
+
+.header__navigation {
+    width: 100%;
+    max-width: 1445px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:501px) {
+    .header {
+    }
+}
+
+@media screen and (min-width:501px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        border-bottom:  1px solid #828282;
+        padding-bottom: 32px;
+
+        margin: 0 auto;
+    }
+}
+
+/*.header__links */ .header__navigation {
+    color: var(--special);
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    padding-top: 33px;
+    margin: 0;
+}
+
+@media screen and (min-width:501px) {
+   /* .header__links */ .header__navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        text-align: center;
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+
+.header__link {
+    text-decoration: none;
+    color: var(--special);
+}
+
+/*==================== header end ====================*/
+/*==================== header end ====================*/
+
+
+/*==================== main start ====================*/
+/*==================== main start ====================*/
+.content {
+    margin: 0 auto;
+}
+
+/*==================== lead block start ====================*/
+.intro {
+    margin: 0 auto; 
+}
+
+@media screen and (max-width:499px)  {
+    .intro {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .intro {
+        margin-bottom: 104px;
+    }
+}
+
+.intro__title {
+    font-size: 47px;
+    line-height: 59px;
+
+    max-width: 124px;
+}
