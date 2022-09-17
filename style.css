@@ -85,6 +85,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 155.5px;
 
         text-align: center;
         width: 100%;
@@ -110,7 +111,7 @@
     margin: 0 auto;
 }
 
-/*==================== lead block start ====================*/
+/*==================== intro block start ====================*/
 .intro {
     margin: 0 auto; 
 }
@@ -147,6 +148,9 @@
     line-height: 20px;
 }
 
+/*==================== intro block end ====================*/
+/*==================== description block start ====================*/
+
 .description {
     background-color: var(--basic-light);
     margin: 0 auto;
@@ -160,6 +164,7 @@
     font-size: 34px;
     line-height: 42px;
     text-align: center;
+    margin-top: 120px;
 
     margin-bottom: 18px;
 }
@@ -171,4 +176,163 @@
     min-height: 218px;
 
     margin-bottom: 107px;
+}
+
+/*==================== description block end ====================*/
+/*==================== skills block start ====================*/
+
+.skills {
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-top: 91px;
+    margin-bottom: 70px;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.skills__text {
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+
+    margin-bottom: 87px;
+}
+
+.skills__container {
+    
+}
+
+.skills__image {
+    text-align: center;
+}
+
+.skills__image-caption {
+    color: var(--special);
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    /*text-align: center;*/
+}
+
+.skills__mark-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills__mark {
+    list-style-type: none;
+}
+
+/*==================== skills block end ====================*/
+/*==================== portfolio block start ====================*/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--basic-light);
+}
+
+.portfolio__title {
+    margin-bottom: 47px;
+    margin-top: 113px;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.portfolio__image-box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.portfolio__image {
+    max-width: 936px;
+    margin-bottom: 45px;
+}
+
+.portfolio__link {
+    margin-bottom: 99px;
+    color: var(--basic-dark);
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio__link:last-child {
+    margin-bottom: 96px;
+}
+
+/*==================== portfolio block end ====================*/
+/*==================== main block end ====================*/
+
+/*==================== footer block start ====================*/
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 114px;
+}
+
+.footer__title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    max-width: 265px;
+    margin-bottom: 29px;
+}
+
+.footer__button {
+    background-color: var(--basic-dark);
+    color: var(--basic-extra-light);
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 25px;
+
+    width: 180.5px;
+    height: 42px;
+    margin-bottom: 85.78px;
+}
+
+.footer__social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    margin-bottom: 45.76px;
+}
+
+.footer__social-link {
+    list-style-type: none;
+}
+
+.footer__caption {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--special);
 }
