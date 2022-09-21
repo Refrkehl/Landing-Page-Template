@@ -8,7 +8,6 @@
 
 .page {
     background-color: var(--basic-extra-light);
-    margin: 0 auto;
 }
 
 .page-body {
@@ -97,6 +96,16 @@
     font-weight: 700;
 }
 
+@media screen and (min-width:501px) {
+    .header__link {
+    }
+}
+
+@media screen and (min-width:501px) {
+    .header__link {
+    }
+}
+
 .header__link:hover {
     color: var(--basic-dark);
 }
@@ -108,19 +117,44 @@
 
 .header__text-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 40px;
-
-    gap: 310px;
+    
 }
 
-.header__title {
-    font-size: 47px;
-    line-height: 59px;
-    margin: 0;
+@media screen and (max-width:499px) {
+    .header__text-container {
+        flex-direction: column;
+        margin-bottom: 39px;
+    }
+}
 
+@media screen and (min-width:501px) {
+    .header__text-container {
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 40px;
+
+        gap: 310px;
+    }
+}
+.header__title {
+    margin: 0;
     font-family: 'Gilroy-Bold'
+}
+
+@media screen and (max-width:499px) {
+    .header__title {
+        font-size: 47px;
+        line-height: 58px;
+        margin-bottom: 23px;
+        margin-left: 26px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .header__title {
+        font-size: 47px;
+        line-height: 59px;
+    }
 }
 
 .header__text {
@@ -129,11 +163,22 @@
     line-height: 22px;
 }
 
+@media screen and (max-width:499px) {
+    .header__text {
+        margin-left: 28px;
+    }
+}
 .header__lang-switch {
     font-family: 'Gilroy-Bold';
     font-size: 16px;
     line-height: 20px;
     transform: rotate(-90deg);
+}
+
+@media screen and (max-width:499px) {
+    .header__lang-switch {
+        display: none;
+    }
 }
 
 .header__lang-link {
@@ -150,10 +195,6 @@
 
 /*==================== main start ====================*/
 /*==================== main start ====================*/
-.content {
-    margin: 0 auto;
-}
-
 /*==================== intro block start ====================*/
 .intro {
     margin: 0 auto; 
@@ -174,10 +215,16 @@
     }
 }
 
-.intro__image {
+.intro__pc-image {
     margin: 0 auto;
     max-width: 943.61px;
     object-fit: cover;
+}
+
+@media screen and (max-width:499px) {
+    .intro__pc-image {
+        display: none;
+    }
 }
 
 /*==================== intro block end ====================*/
@@ -186,9 +233,23 @@
 .description {
     background-color: var(--basic-light);
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+}
+
+@media screen and (max-width:499px) {
+    .description {
+       /* width: calc(100% - 29*2); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .description__title {
@@ -196,20 +257,49 @@
     font-size: 34px;
     line-height: 42px;
     text-align: center;
-    margin-top: 120px;
-
-    margin-bottom: 18px;
 }
+
+@media screen and (max-width:499px) {
+    .description__title {
+        margin-bottom: 30px;
+        margin-top: 81px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .description__title {
+        margin-bottom: 18px;
+        margin-top: 120px;
+    }
+}
+
 
 .description__text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 218px;
-
-    margin-bottom: 107px;
 }
 
+@media screen and (max-width:499px) {
+    .description__text-container {
+        margin-bottom: 30px;
+        margin-top: 81px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .description__text-container {
+        margin-bottom: 107px;
+    }
+}
+
+.description__text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
 /*==================== description block end ====================*/
 /*==================== skills block start ====================*/
 
