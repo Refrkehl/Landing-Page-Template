@@ -589,6 +589,11 @@
     margin-bottom: 85.78px;
 }
 
+.footer__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .footer__social-links {
     display: flex;
     flex-direction: row;
